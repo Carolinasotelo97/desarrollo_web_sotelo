@@ -7,12 +7,13 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #ededed;
+    background-color: #f5f5f5; /* Fondo gris claro */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -21,7 +22,7 @@ body {
 
 header {
     padding: 15px;
-    background-color: #9832ec;
+    background-color: #5B3D59; /* Índigo oscuro para mayor contraste */
     color: #ffffff;
     text-align: center;
     width: 100%;
@@ -31,7 +32,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    background-color: #C18399; /* Tono accesible de púrpura */
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 nav ul {
@@ -41,15 +44,21 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
-    
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    border: 3px solid ;
-    border-radius: 10%;
-    padding: 3px;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #aa77c2;
+    border-color: #6341a7;
 }
 
 main {
@@ -57,26 +66,23 @@ main {
     margin: 20px auto;
     padding: 20px;
     width: 90%;
-    background-color: #f9f9f9;
-    border: 1px solid #cccccc;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-main section {
-    margin-bottom: 20px;
-    padding: 15px;
     background-color: #ffffff;
     border: 1px solid #cccccc;
+    box-shadow: 0px 4px 8px #C18399;
+    border-radius: 8px;
 }
 
 footer {
     padding: 15px;
-    background-color: #333333;
+    background-color: #5B3D59; /* Índigo para alto contraste */
     color: #ffffff;
     text-align: center;
     width: 100%;
-    margin-top: auto; 
+    margin-top: auto;
 }
+
+/* Otros estilos previamente establecidos */
+
 
 footer section {
     margin-bottom: 15px;
@@ -105,31 +111,63 @@ p {
     padding: 1%;
 }
 
+.hero_banner{
+    flex: 1;
+    margin: 20px auto;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10%;
+
+}
+.titulo_descripcion p{
+    text-align: center;
+}
 #carrusel {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    width: 100%; /* Asegúrate de que el carrusel ocupe el ancho completo */
+    max-width: 400px; /* Ajusta el ancho máximo del carrusel si es necesario */
+    margin: auto; /* Centra el carrusel en la página */
 }
 
-#carrusel img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+
+
+.carousel-item {
+    flex: 0 0 75%; /* Cada imagen ocupa el 25% del ancho del contenedor */
+    margin: 0; /* Eliminar márgenes entre imágenes */
 }
 
+.carousel-item img {
+    width: 100%; /* Asegúrate de que las imágenes llenen el contenedor */
+    height: auto; /* Mantener la proporción de aspecto */
+    object-fit: cover; /* Cubrir el espacio disponible manteniendo la proporción */
+}
+
+  
 .bodoni-moda-sc {
     font-family: "Bodoni Moda SC", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
+.ultra-regular {
+    font-family: "Ultra", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute; /* Permite colocar el título sobre la imagen */
+    top: 80%; /* Mueve el título a la mitad de la altura */
+    left: 50%; /* Mueve el título a la mitad del ancho */
+    transform: translate(-50%, -50%); /* Centra el título en ambas direcciones */
+    color: white; /* Color del texto (ajusta según tu diseño) */
+    font-size: 2.5rem; /* Tamaño de la fuente (ajusta según sea necesario) */
+    text-align: center; /* Alineación del texto */
 
-
+    padding: 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+}
 .divider {
     height: 1px;
     background-color: #ccc;
-    margin: 20px 0; 
-    width: 100%; 
+    margin: 20px 0;
+    width: 100%;
 }
 
 #cards {
@@ -161,6 +199,7 @@ p {
     height: 150px;
     object-fit: contain; /* Ajusta la imagen dentro del contenedor */
 }
+
 .card-item {
     display: flex;
     flex-direction: column;
@@ -185,6 +224,7 @@ p {
     font-size: 14px;
     color: #666;
 }
+
 #form {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -199,7 +239,7 @@ p {
 
 #form label {
     margin-bottom: 8px;
-    color: #333; 
+    color: #333;
     font-weight: bold;
 }
 
@@ -217,10 +257,10 @@ p {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #cccccc;
 }
-    
+
 .faq-container h2 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -231,14 +271,16 @@ p {
     font-size: 16px;
     color: #666;
     line-height: 1.5;
-    padding: 0 10px; 
+    padding: 0 10px;
 }
-.web-design h2{
+
+.web-design h2 {
     text-align: left;
     padding-left: 20px;
     margin-bottom: 10px;
 }
-.tresd-design h2{
+
+.tresd-design h2 {
     text-align: left;
     padding-left: 20px;
     margin-bottom: 10px;
@@ -247,22 +289,79 @@ p {
 .web-design {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;   
-    gap: 20px;                     
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
 
 .web-design img {
-    max-width: 100%;                /* Limita el ancho de la imagen al 100% de la celda */
-    max-height: 100%;               /* Limita la altura de la imagen al 100% de la celda */
-    width: auto;                    /* Mantiene la proporción de la imagen */
-    height: auto;                   /* Mantiene la proporción de la imagen */
-    margin: auto;           
+    max-width: 100%; /* Limita el ancho de la imagen al 100% de la celda */
+    max-height: 100%; /* Limita la altura de la imagen al 100% de la celda */
+    width: auto; /* Mantiene la proporción de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: auto;
 }
 
+@media (max-width: 768px) {
 
-@media (max-width:768px){
-    .web-design{
+    .web-design {
         grid-template-columns: 2fr;
         grid-template-rows: repeat(1, 2fr);
     }
+   
+}
+
+/* Nuevo estilo de navegación */
+.navbar-dark {
+    background-color: #C18399; /* Color oscuro elegante */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0c0c0c; /* Un color de acento atractivo */
+}
+.navbar-nav .nav-link.active:hover {
+    color: #3396cfbe; /* Un color de acento atractivo */
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-brand:hover {
+    color: #ffcc00; /* Acento al pasar el mouse */
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1828/1828859.png'); /* Ícono moderno */
+    background-size: contain;
+}
+
+.shadow-sm {
+    box-shadow: 0px 4px 6px rgba(206, 204, 204, 0.1);
+}
+
+.navbar img {
+    filter: invert(1); /* Icono blanco en fondo oscuro */
+    transition: filter 0.3s ease;
+}
+
+.navbar img:hover {
+    filter: invert(0.5); /* Hover en icono de usuario */
+}
+
+.navbar-nav .nav-link:hover {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
