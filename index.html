@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
     <title>Vision 3D</title>
 </head>
 <body>
@@ -19,8 +22,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="logo.png" alt="esto es un logo" width="40" height="40" class="ultra-regular">
-                        Vision 3D
+                        <img src="/assets/9024594_laptop_light_icon.png" alt="esto es un logo" class="icon">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -52,12 +54,21 @@
         </header>     
         <main>
             <img src="/assets/2767770.jpg" alt="esto es un banner principal" class="hero_banner">
-            <h1 class="ultra-regular">Vision 3D</h1>
+            <div class="main_title">
+              <h1 class="ultra-regular">Vision 3D</h1>
+            </div>
             <section class="titulo_descripcion">
                 <h2 class="poppins-light">Encontrá todos los modelos que estás necesitando</h2>
-                <p class="parrafos">Modelos únicos hechos a mano.</p>
-                <div class="divider"></div>
-            </section>
+                <div class="content-container">
+                    <div class="imagen-container">
+                        <img src="/assets/imkara-visual-Esbbmlll_Es-unsplash.jpg" alt="render 3D con varios productos" class="card-item">
+                    </div>
+                    <div class="texto-card">
+                        <p>Modelos únicos hechos a mano.</p>
+                    </div>
+                </div>
+                <div class="divider"></div> 
+            </section>            
             <section>
                 <h2 class="poppins-light">Descubre nuestros productos</h2>
                 <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
@@ -93,6 +104,7 @@
             </section>
             
         </main>
+        </div>
         <footer>
             <section>
                 <h3>Encontranos en nuestras redes:</h3>
@@ -103,15 +115,15 @@
             <nav>
                 <ul>
                     <li><a href="#" class="menu">Inicio</a></li>
-                    <li><a href="servicios.html" class="menu">Servicios</a></li>
-                    <li><a href="contacto.html" class="menu">Contacto</a></li>
-                    <li><a href="galeria.html" class="menu">Galeria</a></li>
-                    <li><a href="faq.html" class="menu">Preguntas Frecuentes</a></li>
+                    <li><a href="/pages/servicios.html" class="menu">Servicios</a></li>
+                    <li><a href="/pages/contacto.html" class="menu">Contacto</a></li>
+                    <li><a href="/pages/galeria.html" class="menu">Galeria</a></li>
+                    <li><a href="/pages/faq.html" class="menu">Preguntas Frecuentes</a></li>
                 </ul>
             </nav>
             <p>Este sitio fue creado por Carolina Sotelo</p>
         </footer>
-    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
