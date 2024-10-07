@@ -1,0 +1,49 @@
+footer {
+    
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    background-color: transparent;
+
+    .footer-container {
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 0 15px; 
+        background-color:  $secondary-bg-color;
+        border-radius: 10px;
+    }
+
+    section {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    nav {
+        margin-bottom: 10px;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            li a {
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    p {
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+}

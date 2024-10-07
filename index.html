@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Open+Sans:ital,wght@0,300;1,300;1,400&family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -14,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <title>Vision 3D</title>
 </head>
 <body>
@@ -53,24 +56,25 @@
             </nav>
         </header>     
         <main>
-            <img src="./assets/2767770.jpg" alt="esto es un banner principal" class="hero_banner">
+            <img src="./assets/banner.png" alt="esto es un banner principal" class="hero_banner">
             <div class="main_title">
               <h1 class="ultra-regular">Vision 3D</h1>
             </div>
             <section class="titulo_descripcion">
-                <h2 class="poppins-light">Encontrá todos los modelos que estás necesitando</h2>
+                <h2 class="poppins-medium">Encontrá todos los modelos que estás necesitando</h2>
                 <div class="content-container">
-                    <div class="imagen-container">
-                        <img src="./assets/imkara-visual-Esbbmlll_Es-unsplash.jpg" alt="render 3D con varios productos" class="card-item">
+                    <div class="animate__animated animate__shakeY">
+                        <div class="imagen-container">
+                            <img src="./assets/circulo.png" alt="render 3D con varios productos" class="card-item">
+                        </div>
                     </div>
                     <div class="texto-card">
-                        <p>Modelos únicos hechos a mano.</p>
-                    </div>
+                        <p>Modelos exclusivos, listos para dar vida a tus proyectos. Cada diseño es una obra única que combina funcionalidad y estética, ideal para potenciar tu presentación visual.</p>
                 </div>
-                <div class="divider"></div> 
-            </section>            
+            </section> 
+            <div class="divider"></div>            
             <section>
-                <h2 class="poppins-light">Descubre nuestros productos</h2>
+                <h2 class="poppins-semibold-italic">Conocé nuestros trabajos</h2>
                 <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -80,16 +84,16 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./assets/render1.jpg" class="d-block w-100" alt="imagen de carrusel 1">
+                            <img src="./assets/modelos-3d.jpg" class="d-block w-100" alt="imagen de carrusel 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/render1.jpg" class="d-block w-100" alt="imagen de carrusel 2">
+                            <img src="./assets/3d.webp" class="d-block w-100" alt="imagen de carrusel 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/render1.jpg" class="d-block w-100" alt="imagen de carrusel 3">
+                            <img src="./assets/450_1000.jpg" class="d-block w-100" alt="imagen de carrusel 3">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/render1.jpg" class="d-block w-100" alt="imagen de carrusel 4">
+                            <img src="./assets/archivos-stl-gratis.png" class="d-block w-100" alt="imagen de carrusel 4">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
@@ -106,22 +110,24 @@
         </main>
         </div>
         <footer>
-            <section>
-                <h3>Encontranos en nuestras redes:</h3>
-                <img src="./assets/instagram-logo-24.png" alt="logo Instagram">
-                <img src="./assets/youtube-logo-24.png" alt="logo YouTube">
-                <img src="./assets/tiktok-logo-24.png" alt="logo TikTok">
-            </section>
-            <nav>
-                <ul>
-                    <li><a href="#" class="menu">Inicio</a></li>
-                    <li><a href="./pages/servicios.html" class="menu">Servicios</a></li>
-                    <li><a href="./pages/contacto.html" class="menu">Contacto</a></li>
-                    <li><a href="./pages/galeria.html" class="menu">Galeria</a></li>
-                    <li><a href="./pages/faq.html" class="menu">Preguntas Frecuentes</a></li>
-                </ul>
-            </nav>
-            <p>Este sitio fue creado por Carolina Sotelo</p>
+            <div class="footer-container">
+                <section>
+                    <h3>Encontranos en nuestras redes:</h3>
+                    <img src="./assets/instagram-logo-24.png" alt="logo Instagram">
+                    <img src="./assets/youtube-logo-24.png" alt="logo YouTube">
+                    <img src="./assets/tiktok-logo-24.png" alt="logo TikTok">
+                </section>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="menu">Inicio</a></li>
+                        <li><a href="./pages/servicios.html" class="menu">Servicios</a></li>
+                        <li><a href="./pages/contacto.html" class="menu">Contacto</a></li>
+                        <li><a href="./pages/galeria.html" class="menu">Galeria</a></li>
+                        <li><a href="./pages/faq.html" class="menu">Preguntas Frecuentes</a></li>
+                    </ul>
+                </nav>
+                <p>Este sitio fue creado por Carolina Sotelo</p>
+            </div>
         </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
