@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -46,20 +47,20 @@ body {
 
 .hero_banner {
   position: relative;
-  width: 100%;
-  height: auto;
+  width: 120vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10%;
-  padding: 20px;
-  margin: 20px auto;
+  padding: 10px;
+  margin: 10px auto;
   background-position: center;
 }
 .hero_banner img {
   width: 100%;
   height: auto;
-  max-height: 20vh;
+  max-height: 15vh;
   object-fit: cover;
 }
 .hero_banner .hero-title {
@@ -236,26 +237,46 @@ p {
   .content-container {
     flex-direction: column;
   }
+  .hero_banner {
+    width: 90vw;
+    height: 50vh;
+    padding: 5px;
+    margin: 5px auto;
+  }
+  .hero_banner img {
+    max-height: 30vh;
+    width: auto; /* Mantiene la relación de aspecto de la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+  }
   .web-design {
-    grid-template-columns: 3fr;
-    grid-template-rows: repeat(1, 3fr);
+    display: grid; /* Asegúrate de que .web-design tenga display: grid */
+    grid-template-columns: 1fr; /* Asegúrate de que cada card ocupe el ancho completo */
+    grid-template-rows: repeat(1, auto); /* Ajusta la altura de cada fila según el contenido */
   }
   .carrusel-uno img {
     width: 100%;
+    height: auto; /* Asegúrate de que la imagen mantenga su proporción */
   }
   footer {
-    padding: 20px;
+    padding: 0 15px 0 15px;
   }
-  footer section {
+  footer .redes {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+  }
+  footer nav {
+    justify-content: space-around;
+    padding: 0 50px 0 50px;
   }
   footer nav ul {
     flex-direction: column;
     gap: 15px;
+    padding: 0 50px 0 50px;
+    justify-content: center;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 375px) {
   .container {
     padding: 10px;
     width: 100%;
@@ -274,25 +295,31 @@ p {
     transform: translate(-50%, -25%);
   }
   .cards-icon {
+    display: flex; /* Asegúrate de que sea flex */
     flex-direction: column;
     gap: 20px;
+    align-items: center; /* Centra los elementos dentro de cards-icon */
   }
   .cards-icon img {
-    width: 100px;
-    height: 100px;
+    width: 80px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
   }
   .card-item h2 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .card-item p {
-    font-size: 12px;
+    font-size: 10px;
   }
   footer {
-    padding: 10px;
+    padding: 0 15px 0 15px;
   }
-  footer section {
+  footer .redes {
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+  }
+  footer nav {
+    justify-content: space-around;
+    padding: 0 10px 0 0px;
   }
   footer nav ul {
     flex-direction: column;
@@ -306,6 +333,7 @@ p {
 
 .faq {
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 header {
@@ -354,6 +382,12 @@ nav ul li a:hover {
   padding: 2px;
 }
 
+.icon-white {
+  width: 35;
+  height: 35;
+  filter: brightness(0) invert(1); /* Cambia el color a blanco */
+}
+
 footer {
   text-align: center;
   margin-top: auto;
@@ -363,17 +397,17 @@ footer {
 footer .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 10px 20px;
   background-color: #CAB3E7;
   border-radius: 10px;
 }
-footer section {
-  margin-bottom: 10px;
+footer .redes {
+  margin: 15px;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-footer section img {
+footer .iconos img {
   width: 24px;
   height: 24px;
 }
@@ -383,8 +417,9 @@ footer nav {
 footer nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 10px;
+  padding: 0 40px 0 40px;
 }
 footer nav ul li a {
   color: #ffffff;
@@ -394,6 +429,9 @@ footer nav ul li a {
 footer p {
   font-size: 0.8rem;
   margin: 5px 0;
+}
+footer .menu {
+  text-align: center;
 }
 
 #form {
@@ -423,6 +461,10 @@ footer p {
 
 .image-zoom:hover {
   transform: scale(1.05);
+}
+
+:root {
+  --animate-delay: 2s;
 }
 
 /*# sourceMappingURL=styles.css.map */

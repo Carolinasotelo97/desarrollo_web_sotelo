@@ -47,20 +47,20 @@ body {
 
 .hero_banner {
   position: relative;
-  width: 100%;
-  height: auto; 
+  width: 120vh;
+  height: 70vh; 
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10%;
-  padding: 20px;
-  margin: 20px auto;
+  padding: 10px;
+  margin: 10px auto;
   background-position: center;
 
   img {
     width: 100%; 
     height: auto; 
-    max-height: 20vh; 
+    max-height: 15vh; 
     object-fit: cover; 
   }
 
@@ -232,8 +232,7 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 768px) { //iPad Mini 
   .navbar {
       flex-direction: column;
       align-items: flex-start; 
@@ -242,88 +241,114 @@ p {
   .content-container {
       flex-direction: column;
   }
-  .web-design {
-      grid-template-columns: 3fr;
-      grid-template-rows: repeat(1, 3fr);
+
+  .hero_banner {
+    width: 90vw;  
+    height: 50vh;  
+    padding: 5px;  
+    margin: 5px auto;
+
+    img {
+        max-height: 30vh; 
+        width: auto; /* Mantiene la relación de aspecto de la imagen */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+    }
   }
+
+  .web-design {
+      display: grid; /* Asegúrate de que .web-design tenga display: grid */
+      grid-template-columns: 1fr; /* Asegúrate de que cada card ocupe el ancho completo */
+      grid-template-rows: repeat(1, auto); /* Ajusta la altura de cada fila según el contenido */
+  }
+
   .carrusel-uno img {
       width: 100%; 
+      height: auto; /* Asegúrate de que la imagen mantenga su proporción */
   }
+
   footer {
-      padding: 20px;
+      padding: 0 15px 0 15px;
   }
 
-  footer section {
-      flex-direction: column;
-      align-items: center;
+  footer .redes {
+      display: flex;
+      flex-direction:column;
+      justify-content: space-around;
+      
   }
-
+  footer nav{
+    justify-content: space-around;
+    padding: 0 50px 0 50px;
+  }
   footer nav ul {
       flex-direction: column;
       gap: 15px;
+      padding: 0 50px 0 50px;
+      justify-content: center;
   }
 }
 
-@media (max-width: 390px) {
-
+@media (max-width: 375px) { //iPhone SE, iPhone XR
   .container {
       padding: 10px;
       width: 100%; 
   }
-
 
   header {
       padding: 10px;
       text-align: center; 
   }
 
- 
   nav ul {
       flex-direction: column; 
       gap: 10px;
   }
 
- 
   .hero-banner h1 {
       font-size: 1.5rem; 
       top: 25%; 
       transform: translate(-50%, -25%); 
-    }
- 
+  }
   .cards-icon {
+      display: flex; /* Asegúrate de que sea flex */
       flex-direction: column; 
       gap: 20px; 
+      align-items: center; /* Centra los elementos dentro de cards-icon */
   }
 
   .cards-icon img {
-      width: 100px;
-      height: 100px;
+      width: 80px; /* Ajusta el tamaño de la imagen */
+      height: auto; /* Mantiene la proporción */
   }
 
- 
   .card-item h2 {
-      font-size: 16px; 
+      font-size: 14px; 
   }
 
   .card-item p {
-      font-size: 12px; 
+      font-size: 10px; 
   }
-
 
   footer {
-      padding: 10px;
+    padding: 0 15px 0 15px;
   }
 
-  footer section {
-      flex-direction: column;
-      align-items: center;
+  footer .redes {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer nav{
+    justify-content: space-around;
+    padding: 0 10px 0 0px;
   }
 
   footer nav ul {
-      flex-direction: column;
-      gap: 5px;
+    flex-direction: column;
+    gap: 5px;
+    //padding: 0 70px 0 70px;
   }
 }
+
 
 .tresd-design h2{
   text-align: left;
@@ -331,4 +356,5 @@ p {
 }
 .faq {
   margin-top: 100px;
+  margin-bottom: 50px;
 }

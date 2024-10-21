@@ -8,17 +8,19 @@ footer {
     .footer-container {
         max-width: 1200px; 
         margin: 0 auto; 
-        padding: 0 15px; 
+        padding: 10px 20px; 
         background-color:  $secondary-bg-color;
         border-radius: 10px;
     }
 
-    section {
-        margin-bottom: 10px;
+    .redes {
+        margin: 15px;
         display: flex;
         justify-content: center;
         gap: 10px;
-
+    }
+    .iconos{
+        
         img {
             width: 24px;
             height: 24px;
@@ -31,8 +33,9 @@ footer {
         ul {
             list-style-type: none;
             display: flex;
-            justify-content: center;
+            justify-content:space-around;
             gap: 10px;
+            padding: 0 40px 0 40px;
 
             li a {
                 color: #ffffff;
@@ -45,5 +48,9 @@ footer {
     p {
         font-size: 0.8rem;
         margin: 5px 0;
+    }
+
+    .menu{
+        text-align: center;
     }
 }
