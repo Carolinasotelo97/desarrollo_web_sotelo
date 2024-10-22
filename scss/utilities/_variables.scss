@@ -3,12 +3,17 @@ $secondary-bg-color: #CAB3E7;
 $text-color: #ffffff;
 $container-max-width: 1200px;
 $background-color: #e6e3e3;
-$text-color: #ffffff;
+$texto-card: rgba(255, 255, 255, 0.9);
 $border-color: #cccccc;
 $shadow-color: rgba(0, 0, 0, 0.1);
 $font-family-open-sans: 'Open Sans', sans-serif;
 $padding: 15px;
-
+$background-color-answer: #c2c5c59f;
+$border-color-answer: #bee5eb;
+$font-poppins-semibold-italic: "Poppins", sans-serif;
+$title-service:#333;
+$font-ultra-regular: "Ultra", serif;
+$text-color-black: #0a0808;
 
 @mixin flex-center {
     display: flex;

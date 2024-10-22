@@ -1,0 +1,153 @@
+@import 'utilities/variables';
+
+@media (max-width: 768px) { //iPad Mini 
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start; 
+    }
+  
+    .content-container {
+      flex-direction: column;
+    }
+  
+    .hero_banner {
+      width: 90vw;  
+      height: 50vh;  
+      padding: 5px;  
+      margin: 5px auto;
+  
+      img {
+        max-height: 30vh; 
+        width: auto; /* Mantiene la relación de aspecto de la imagen */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+      }
+    }
+  
+    .web-design {
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: repeat(1, auto); 
+    }
+  
+    .carrusel-uno img {
+      width: 100%; 
+      height: auto; /* Asegúrate de que la imagen mantenga su proporción */
+    }
+  
+    .cards-icon {
+      flex-direction: column; // Apilar tarjetas en pantallas pequeñas
+      align-items: center; // Centra las tarjetas
+  
+      .card-item-servicios {
+        max-width: 90%; // Ocupa el 90% del ancho en pantallas pequeñas
+        margin: 10px 0; // Margen entre las tarjetas
+      }
+    }
+  
+    footer {
+      padding: 0 $padding;
+    }
+  
+    footer .redes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  
+    footer nav {
+      justify-content: space-around;
+      padding: 0 50px;
+    }
+  
+    footer nav ul {
+      flex-direction: column;
+      gap: $padding;
+      padding: 0 50px;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 1024px) { // Tablets grandes
+    .hero_banner {
+      height: 60vh;
+    }
+  
+    .content-container {
+      flex-direction: column;
+    }
+  
+    .ultra-regular {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) { // Tablets pequeñas, iPad mini
+    .navbar {
+      flex-direction: column;
+  
+    }
+  
+    .hero_banner {
+      height: 50vh;
+    }
+  
+    .hero-title {
+      font-size: 1.8rem;
+    }
+  
+    .gallery-item {
+      flex: 0 0 48%;
+      max-width: 100%;
+    }
+    .cards-icon {
+      flex-direction: column;
+      gap: $padding;
+    }
+  
+  }
+  
+  @media (max-width: 576px) { // Smartphones grandes
+    .container {
+      padding: 10px;
+      width: 100%;
+    }
+  
+    .hero_banner {
+      width: 90vw;
+      height: 40vh;
+    }
+  
+    .hero-title {
+      font-size: 1.5rem;
+    }
+  
+    .content-container {
+      flex-direction: column;
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .text-card {
+      max-width: 100%;
+    }
+    .cards-icon {
+      flex-direction: column;
+      gap: $padding;
+    }
+  }
+  
+  @media (max-width: 375px) { // Smartphones pequeños
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .hero-title {
+      font-size: 1.3rem;
+    }
+  
+    .cards-icon {
+      flex-direction: column;
+      gap:$padding;
+    }
+  }
+  

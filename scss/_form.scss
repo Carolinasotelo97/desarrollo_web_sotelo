@@ -7,13 +7,13 @@
   margin: 50px auto;
   padding: 30px;
   max-width: 500px;
-  background-color: #f7f7f7;
+  background-color: $text-color;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px $shadow-color;
 
   label {
     margin-bottom: 6px;
-    color: #333;
+    color: $title-service;
     font-weight: 600;
     font-size: 0.9rem;
     display: block;
@@ -25,15 +25,15 @@
   textarea {
     width: 100%;
     padding: 12px;
-    margin-bottom: 15px;
+    margin-bottom: $padding;
     border: 1px solid #ddd;
     border-radius: 6px;
-    background-color: #fafafa;
+    background-color: $text-color;
     font-size: 0.95rem;
     transition: border-color 0.3s ease;
 
     &:focus {
-      border-color: #333;
+      border-color: $shadow-color;
       outline: none;
     }
   }
@@ -44,7 +44,7 @@
     border: none;
     border-radius: 6px;
     background-color: $secondary-bg-color;
-    color: #0a0808;
+    color: $text-color-black;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -55,7 +55,7 @@
   }
 
   div {
-    margin-top: 15px;
+    margin-top: $padding;
     display: flex;
     justify-content: space-between;
 
@@ -66,7 +66,7 @@
       transition: color 0.3s ease;
 
       &:hover {
-        color: #333;
+        color: $shadow-color;
       }
     }
   }

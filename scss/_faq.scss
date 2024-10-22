@@ -1,0 +1,27 @@
+@import 'utilities/variables';
+
+.faq {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .accordion-button {
+    background-color: $background-color; /* Color de fondo para el botón de pregunta */
+    color: $primary-bg-color; /* Color del texto del botón de pregunta */
+    border: none; /* Sin borde */
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none; /* Sin sombra al hacer foco */
+  }
+  
+  .accordion-button.collapsed {
+    background-color: $text-color; /* Color de fondo cuando está colapsado */
+  }
+  
+  .accordion-collapse .accordion-body {
+    background-color: $background-color-answer; /* Color de fondo para el cuerpo de respuesta */
+    color: $primary-bg-color; /* Color del texto de respuesta */
+    border: 1px solid $border-color-answer; /* Borde para el cuerpo de respuesta */
+    border-radius: 0.25rem; /* Bordes redondeados */
+  }
+  
