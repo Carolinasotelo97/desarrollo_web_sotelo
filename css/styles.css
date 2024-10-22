@@ -34,10 +34,6 @@
     max-width: 90%;
     margin: 10px 0;
   }
-  .animate__animated.animate__pulse {
-    --animate-duration: 2s;
-    --animate-repeat: 2;
-  }
   footer {
     padding: 0 15px;
   }
@@ -67,10 +63,6 @@
   .ultra-regular {
     font-size: 2rem;
   }
-  .animate__animated.animate__pulse {
-    --animate-duration: 2s;
-    --animate-repeat: 2;
-  }
 }
 @media (max-width: 768px) {
   .navbar {
@@ -89,10 +81,6 @@
   .cards-icon {
     flex-direction: column;
     gap: 15px;
-  }
-  .animate__animated.animate__pulse {
-    --animate-duration: 2s;
-    --animate-repeat: 2;
   }
 }
 @media (max-width: 576px) {
@@ -119,10 +107,6 @@
     flex-direction: column;
     gap: 15px;
   }
-  .animate__animated.animate__pulse {
-    --animate-duration: 2s;
-    --animate-repeat: 2;
-  }
 }
 @media (max-width: 375px) {
   .navbar {
@@ -134,10 +118,6 @@
   .cards-icon {
     flex-direction: column;
     gap: 15px;
-  }
-  .animate__animated.animate__pulse {
-    --animate-duration: 2s;
-    --animate-repeat: 2;
   }
 }
 * {
@@ -560,6 +540,11 @@ footer .menu {
 
 :root {
   --animate-delay: 2s;
+}
+
+.animate__animated.animate__pulse {
+  --animate-duration: 2s;
+  --animate-repeat: 2;
 }
 
 /*# sourceMappingURL=styles.css.map */
