@@ -131,9 +131,9 @@ p {
 
 #cards {
   display: flex;
-  flex-wrap: wrap; // Permite que las tarjetas se acomoden en varias filas
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start; // Alinea al inicio en lugar de centrarlas
+  align-items: flex-start; 
   gap: 30px;
   text-align: center;
   margin-top: 40px; 
@@ -157,17 +157,17 @@ p {
 
 .cards-icon {
   display: flex;
-  flex-wrap: wrap; // Permite que las tarjetas se acomoden en varias filas
-  justify-content: center; // Centra las tarjetas
+  flex-wrap: wrap;
+  justify-content: center; 
   margin: 20px 0;
 
   .card-item-servicios {
-    flex: 1 1 300px; // Cada tarjeta ocupa al menos 300px de ancho
+    flex: 1 1 300px; 
     margin: 10px; 
     padding: $padding;
     text-align: center;
     box-shadow: 0 4px 8px $shadow-color;
-    max-width: 300px; // Ancho máximo para mantener las tarjetas manejables
+    max-width: 300px; 
 
     img {
       max-width: 40%; 
